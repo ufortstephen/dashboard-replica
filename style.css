@@ -28,7 +28,8 @@ body, html {
 }
 
 .aa {
-    gap: 8.5rem;
+    display: grid;
+    grid-template-columns: 17% 1fr;
 }
 
 .home {
@@ -102,13 +103,13 @@ h4.logo-name span {
 
 .workout-btn {
     background: #0B2997;
-    box-shadow: 0px 20px 40px rgba(11, 41, 151, 0.2);
+    box-shadow: 0px 20px 40px rgb(11 41 151 / 20%);
     border-radius: 25px;
-    padding: 1rem 1rem 1rem 4.5rem;
+    outline: none;
+    border: none;
     text-align: left;
-    font-family: Lato;
-    font-style: normal;
-    letter-spacing: -0.3px;
+    width: 70%;
+    height: 5rem;
     color: #FFFFFF;
 }
 
@@ -538,5 +539,8 @@ section .plan-list div p {
     body {
         padding: 0;
         margin: 0;
+    }
+    .circle-logo {
+        display: none !important;
     }
 }
