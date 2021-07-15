@@ -22,7 +22,7 @@ body, html {
     src: url('kollektif/Kollektif-Bold.ttf') format('opentype');
 }
 
-.row, .col-md-2, .col-md-10 {
+.row, .col-md-2, .col-md-10, .col-md-7 {
     padding: 0;
     margin: 0;
 }
@@ -235,7 +235,7 @@ nav div .fa-th-list {
 }
 
 section {
-    height: 89vh;
+    /* height: 89vh; */
     background: #F6F9F2;
     display: inline-block;
 }
@@ -285,6 +285,7 @@ section .plan-list div p {
 }
 
 .plan-list .status {
+    /* width: max-content; */
     background-color: #E8E8E8;
     padding: .5rem 1.5rem;
     border-radius: 25px;
@@ -498,7 +499,7 @@ section .plan-list div p {
     color: #fff;
 }
 
-@media (max-width:768px) {
+@media (max-width:1000px) {
     html {
         width: max-content;
         height: 100vh;
