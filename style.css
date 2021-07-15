@@ -249,6 +249,7 @@ section .plan-list {
     display: grid;
     grid-template-columns: 70% 1fr;
     gap: 40px;
+    background-color: #E5E5E5 !important;
 }
 
 section .plan {
@@ -499,6 +500,7 @@ section .plan-list div p {
 @media (max-width:768px) {
     html {
         width: max-content;
+        height: 100vh;
     }
     .aside {
         display: none;
