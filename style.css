@@ -22,7 +22,7 @@ body, html {
     src: url('kollektif/Kollektif-Bold.ttf') format('opentype');
 }
 
-.row, .col-md-2, .col-md-10, .col-md-7 {
+.row, .col-md-2, .col-md-10, .col-md-7, .col-lg-2 {
     padding: 0;
     margin: 0;
 }
@@ -61,19 +61,20 @@ h4.logo-name span {
 }
 
 .menu p {
-    padding-left: 3.7rem;
+    /* padding-left: 3.7rem; */
     font-size: large;
     font-family: Kollektif;
     font-style: normal;
     font-weight: bolder;
     color: #000000;
+    padding-left: .5rem;
 }
 
 .menu li {
     padding: 1rem 0;
-    padding-left: 1rem;
+    padding-left: .5rem;
     margin: .5rem 0;
-    margin-left: 2.7rem;
+    /* margin-left: 2.7rem; */
     font-size: 15px;
     font-family: Lato;
     font-style: normal;
@@ -88,7 +89,7 @@ h4.logo-name span {
 }
 
 .menu li:nth-child(4) {
-    padding: 1rem;
+    /* padding: 1rem; */
     background: #E5E7F3;
     border-radius: 15px 0px 0px 15px;
     border-right: 6px solid #0B2997;
@@ -108,7 +109,7 @@ h4.logo-name span {
     outline: none;
     border: none;
     text-align: left;
-    width: 70%;
+    width: 100%;
     height: 5rem;
     color: #FFFFFF;
 }
@@ -168,6 +169,8 @@ nav div .fa-th-list {
     font-weight: 800;
     letter-spacing: -0.3px;
     color: #000000;
+    font-size: 1.2rem;
+    /* margin-right: .5rem; */
 }
 
 .input-container {
@@ -181,7 +184,7 @@ nav div .fa-th-list {
     background: #E9E9E9;
     border-radius: 20px;
     padding: 0 3rem;
-    width: 350px;
+    width: 15rem;
 }
 
 .input-container .fa {
@@ -194,8 +197,8 @@ nav div .fa-th-list {
 
 .icons {
     position: relative;
-    height: 50px;
-    width: 50px;
+    height: 45px;
+    width: 45px;
     background: #E9EFFF;
     border-radius: 20px;
     text-align: center;
@@ -278,8 +281,8 @@ section .plan-list div h6 {
     font-size: larger;
 }
 
-section .plan-list div p {
-    font-size: small;
+section .plan-list div .text {
+    font-size: x-small;
     font-weight: bold;
     color: #999999;
 }
@@ -308,9 +311,15 @@ section .plan-list div p {
 
 .plan-list .filter {
     background-color: #0B2997;
-    padding: .6rem 2.5rem;
+    padding: .9rem 2.5rem;
     border-radius: 25px;
-    color: #fff;
+    color: #fff !important;
+}
+
+.filter p {
+    color: #fff !important;
+    align-self: center;
+    margin-bottom: 0;
 }
 
 .plan-list .filter img {
@@ -342,7 +351,7 @@ section .plan-list div p {
     background: #F5F5F5;
     border-radius: 20px;
     /* width: 40%; */
-    padding: 1rem;
+    padding: .8rem;
     color: #0B2997;
     /* font-weight: 600; */
     font-size: 15px;
@@ -390,7 +399,7 @@ section .plan-list div p {
 
 .weekly-status h3 {
     /* font-weight: 600; */
-    font-size: 18px;
+    font-size: 14px;
     color: #000;
     padding-top: .4rem;
     font-family: Lato;
@@ -423,6 +432,10 @@ section .plan-list div p {
 
 .active img {
     width: 20px;
+}
+
+.bg {
+    width: max-content;
 }
 
 .active .bg {
@@ -543,5 +556,17 @@ section .plan-list div p {
     }
     .circle-logo {
         display: none !important;
+    }
+}
+
+@media (max-width:1448px) {
+    .menu li img {
+        width: 20px;
+        height: 20px;
+        margin-right: .3rem !important;
+        /* display: none; */
+    }
+    .menu li {
+        font-size: smaller;
     }
 }
